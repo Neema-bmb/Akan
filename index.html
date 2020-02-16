@@ -4,16 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <a herf="bootstrap.css"></a>
-    <title>ADIN</title>
+    <link rel="stylesheet" href="/home/neema/Documents/Akannames/index.css/bootstrap.css" type="text/css">
+    <title>AKAN NAMES</title>
 </head>
+
 <body>
-   <div id=form>
-       <p></p>
-       <form class=form>
-          
-       </form>
-   </div>
+    <h1>FIND OUT YOUR AKAN NAME TODAY!</h1>
+      <p> Frequently, children are given a "day name" which corresponds to the day in the week they were born.<br>
+        These day names have further meanings concerning the soul and character of the person.
+        This app will help you discover your Akan name, just key in the date of your birth below.
+      </p>
+      <div class="container"></div> 
+      <div class="form" onesubmit="return false">
+        <label>Year of Birth</label>
+        <input type="text" placeholder="YoB" id="Year"><br><br>
+
+        <label>Month</label>
+        <input type="text" placeholder="mm" id="Month"><br><br>
+
+        <label>Date</label>
+        <input type="text" placeholder="DoB" id="Date"><br><br>
+
+        <select id="gender" name="gender">
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        </select>
+
+        <input type="submit" oneclick="akanName()"class="form" value="submit" style="back-ground">
+        <p id="answer"> and your akan name</p>
+      </div>
+      </div>
+      <script> scr="/home/neema/Documents/Akannames/index.js"</script>
     
 </body>
 </html>
