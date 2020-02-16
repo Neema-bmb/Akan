@@ -10,30 +10,35 @@
 
 <body>
     <h1>FIND OUT YOUR AKAN NAME TODAY!</h1>
-      <p> Frequently, children are given a "day name" which corresponds to the day in the week they were born.<br>
+       <img scr= "bg41.jpeg"><br><br>
+       
+       <p> Frequently, children are given a "day name" which corresponds to the day in the week they were born.<br>
         These day names have further meanings concerning the soul and character of the person.
         This app will help you discover your Akan name, just key in the date of your birth below.
       </p>
-      <div class="container"></div> 
-      <div class="form" onesubmit="return false">
-        <label>Year of Birth</label>
-        <input type="text" placeholder="YoB" id="Year"><br><br>
 
-        <label>Month</label>
-        <input type="text" placeholder="mm" id="Month"><br><br>
+        <div class="container">
+         <div class="form" onsubmit="return false">
 
-        <label>Date</label>
-        <input type="text" placeholder="DoB" id="Date"><br><br>
+          <label>Year of Birth</label><br>
+          <input type="text" placeholder="YoB" id= "Year"><br><br>
 
-        <select id="gender" name="gender">
-        <option value="male">Male</option>
-        <option value="female">Female</option>
-        </select>
+          <label>Month</label><br>
+          <input type="text" placeholder="mm" id="Month"><br><br>
 
-        <input type="submit" oneclick="akanName()"class="form" value="submit" style="back-ground">
-        <p id="answer"> and your akan name</p>
-      </div>
-      </div>
+          <label>Date</label><br>
+          <input type="text" placeholder="DoB" id="Date"><br><br><br>
+
+          <select id="gender" name="gender">
+           <option value="male">Male</option>
+           <option value="female">Female</option>
+          </select>
+
+          <input type="submit" oneclick="akanNames()" class="form" value="submit">
+          
+          <p id="answer">Your akan name is</p>
+         </div>
+        </div>
       <script> scr="/home/neema/Documents/Akannames/index.js"</script>
     
 </body>
