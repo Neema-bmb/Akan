@@ -31,5 +31,5 @@ function btnClick() {
 
   var output = sex[CalculateDate];
   /*document.getElementById("answer").innerHtml = "Your Akan name is"+output+".";*/
-  alert("Your Akan Name is+""+ (output);
+  alert(output);
 }
