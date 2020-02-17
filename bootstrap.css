@@ -4326,11 +4326,10 @@ input[type="button"].btn-block {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   -ms-flex-align: center;
-  align-items: right;
+  align-items: center;
   -ms-flex-pack: justify;
   justify-content: space-between;
   padding: 0.5rem 1rem;
-  color: maroon;
 }
 
 .navbar .container,
@@ -4340,7 +4339,7 @@ input[type="button"].btn-block {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   -ms-flex-align: center;
-  align-items: right;
+  align-items: center;
   -ms-flex-pack: justify;
   justify-content: space-between;
 }
@@ -4398,7 +4397,7 @@ input[type="button"].btn-block {
   padding: 0.25rem 0.75rem;
   font-size: 1.25rem;
   line-height: 1;
-  background-color: maroon;
+  background-color: transparent;
   border: 1px solid transparent;
   border-radius: 0.25rem;
 }
