@@ -64,20 +64,15 @@ the specific date when an individual was born and assigns them the correct Akan 
     sex = female;
   }
   ```
-## 
-``
+## Output
+To calculate output using the information we have obtained above we us the variable output as shown below:
+```
 var output = sex[CalculateDate];
   alert(output);
-``
-  
-
-
-## Setup/Installation Requirements
-* Fill in your date of birth in the space provided
-* Submit for calculation
+```
 
 ## Known Bugs
-{There are no known Bugs.}
+If you find any issues in the code feel free to comment[Click Here](https://github.com/Neema-bmb/Akan/issues/new)
 
 ### Technologies Used
 {I used HTML, Bootstrap and Javascript}
@@ -88,4 +83,4 @@ Live link:https://neema-bmb.github.io/Akan/}
 
 
 ### License
-[MIT.See below for more details on licensing](LICENCE.txt)
+[MIT.licensing](LICENCE.txt)
