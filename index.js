@@ -1,26 +1,43 @@
  
- 
-function btnClick() {
-  var Year = document.getElementById("Year").value;
-  var MM = parseInt(document.getElementById("Month").value);
-  var DD = parseInt(document.getElementById("Date").value);
-  var CC = parseInt(Year.slice(0, 2));
-  var YY = parseInt(Year.slice(2, 4));
+var Year, MM, mmm, ddd, YY, DD, CC, date, newDate, male, female, gender, CalculateDate, sex, newDate, output;
 
-
-  var male = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
-  var female = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
-  var gender = document.getElementById("gender").value;
+ function checking(){
+  if (Year <1){
+    alert("Invalid Year");
+  }else if (mmm == "") {
+    alert("Invalid Month");
+  }else  if (ddd=="") {
+    alert("Invalid Date");
+  }
   
-  var CalculateDate = (((CC / 4) - 2 * CC - 1) + ((5 * YY / 4)) + ((26 * (MM + 1) / 10)) + DD) % 7;
+ }
+function btnClick() {
+  Year = document.getElementById("Year").value;
+  MM = parseInt(document.getElementById("Month").value);
+  mmm = document.getElementById("Month").value;
+  ddd = document.getElementById("Date").value;
+  DD = parseInt(document.getElementById("Date").value);
+  CC = parseInt(Year.slice(0, 2));
+  YY = parseInt(Year.slice(2, 4));
+
+  date=[Year,MM,DD];
+  newDate=date.join("/");
+  
+
+  male = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
+  female = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
+  weekdays=[""];
+  gender = document.getElementById("gender").value;
+  
+  CalculateDate = (((CC / 4) - 2 * CC - 1) + ((5 * YY / 4)) + ((26 * (MM + 1) / 10)) + DD) % 7;
   CalculateDate = Math.floor(CalculateDate);
   if (MM < 1 || MM > 12) {
     alert("Invalid Month");
   }
-  if (DD > 31 || DD < 1) {
+   if (DD > 31 || DD < 1) {
     alert("Invalid Date");
   }
-
+  checking();
 
   if (gender === "male") {
     sex = male;
@@ -29,6 +46,6 @@ function btnClick() {
     sex = female;
   }
 
-  var output = sex[CalculateDate];
-  alert(output);
+  output = sex[CalculateDate];
+  alert("Congratulations you were born on" +" "+newDate +" "+"and your Akan name is" +" "+output);
 }
