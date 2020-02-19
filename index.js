@@ -44,7 +44,7 @@ function btnClick() {
   }
   else {
     sex = female;
-  };
+  }
 
   output = sex[CalculateDate];
   alert("Congratulations you were born on" +" "+newDate +" "+"and your Akan name is" +" "+output);
